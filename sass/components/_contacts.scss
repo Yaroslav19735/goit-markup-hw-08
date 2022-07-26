@@ -1,0 +1,81 @@
+.header-mail:hover,
+.header-mail:focus {
+    color: var(--accent-color);
+}
+
+.header-contact:hover,
+.header-contact:focus {
+    color: var(--accent-color);
+}
+
+.header-mail,
+.header-contact {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-family: var(--main-font), "sans-serif";
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--p-color);
+    margin-left: 50px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-mail {
+    margin-left: 0px;
+}
+
+.mail-phone-link {
+    fill: var(--p-color);
+    display: flex;
+    align-items: center;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail-phone-link:hover,
+.mail-phone-link:focus {
+    fill: var(--accent-color);
+}
+
+.svg-mail-phone {
+    margin-right: 10px;
+}
+
+.portfolio-contact {
+    text-shadow: none;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.footer-mail,
+.footer-tel {
+    font-family: var(--main-font), "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.portfolio-contact {
+    text-shadow: none;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+

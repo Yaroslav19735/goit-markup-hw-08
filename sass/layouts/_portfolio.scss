@@ -1,0 +1,31 @@
+/* Галерея портфоліо */
+
+.box-title {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-title {
+    margin-bottom: 4px;
+
+    font-family: var(--main-font), "sans-serif";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.19;
+    letter-spacing: 0.06em;
+    color: var(--main-txt-light);
+}
+
+.portfolio-text {
+
+    font-family: var(--main-font), "sans-serif";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--p-color);
+}
+

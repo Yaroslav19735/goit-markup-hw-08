@@ -1,0 +1,54 @@
+/* Секція команда */
+
+.section-team {
+    padding: 94px 0;
+    background: #F5F4FA;
+}
+
+.cards-team {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.team-list {
+    margin-right: 30px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--main-txt-dark);
+}
+
+.team-list:last-child {
+    margin-right: 0px;
+}
+
+
+.under-title-list {
+    margin-bottom: 10px;
+
+    font-family: var(--main-font), "sans-serif";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-light);
+}
+
+.job-team {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.job-title {
+
+    font-family: var(--main-font), "sans-serif";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--p-color);
+    margin-bottom: 16px;
+}

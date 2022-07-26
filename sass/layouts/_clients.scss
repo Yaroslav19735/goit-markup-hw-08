@@ -1,0 +1,72 @@
+/* Постійні клієнти */
+
+.clients {
+    padding: 94px 0;
+}
+
+.clients__title {
+    margin-bottom: 50px;
+    font-family: var(--main-font), "sans-serif";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-light);
+}
+
+
+.clients-box {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.clients__list {
+    display: flex;
+    justify-content: center;
+
+}
+
+.clients__icon {
+    width: calc(100% / 6 - 30px);
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--fill-color);
+    border-radius: 4px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+.clients__icon:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients__icon:hover,
+.clients__icon:focus {
+    border-color: var(--accent-color);
+}
+
+.clients__link {
+    fill: var(--fill-color);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    
+    }
+}

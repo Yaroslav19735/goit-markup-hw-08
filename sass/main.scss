@@ -1,0 +1,27 @@
+// Utils styles
+@import "./utils/variables";
+@import "./utils/mixins";
+
+// base styles
+@import "./base/common";
+@import "./base/reset";
+
+// components styles
+@import "./components/buttons";
+@import "./components/container";
+@import "./components/contacts";
+@import "./components/logo";
+@import "./components/modal";
+@import "./components/overlay";
+@import "./components/social";
+
+// layouts styles
+@import "./layouts/header";
+@import "./layouts/job";
+@import "./layouts/clients";
+@import "./layouts/features";
+@import "./layouts/footer";
+@import "./layouts/boxprtf";
+@import "./layouts/about";
+@import "./layouts/portfolio";
+@import "./layouts/team";
