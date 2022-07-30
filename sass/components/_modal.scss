@@ -187,6 +187,10 @@
     background-color: var(--accent-color);
 }
 
+.input-check:focus+.modal-svg {
+    border-color: var(--accent-color);
+}
+
 .modal-vector {
     position: absolute;
     fill: var(--main-txt-dark);

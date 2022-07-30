@@ -79,11 +79,7 @@ hr {
 }
 
 .portfolio-btn {
-  padding-top: 6px;
-  padding-right: 22px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  margin-left: 8px;
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -465,6 +461,10 @@ hr {
   background-color: var(--accent-color);
 }
 
+.input-check:focus + .modal-svg {
+  border-color: var(--accent-color);
+}
+
 .modal-vector {
   position: absolute;
   fill: var(--main-txt-dark);
@@ -554,6 +554,7 @@ hr {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .projects-overlay-text {
@@ -568,8 +569,8 @@ hr {
           transition-duration: 250ms;
 }
 
-.card-img:hover .projects-overlay,
-.card-img:focus .projects-overlay {
+.card-link:hover .projects-overlay,
+.card-link:focus .projects-overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
@@ -757,14 +758,6 @@ hr {
   color: var(--accent-color);
 }
 
-.carrent {
-  color: var(--accent-color);
-}
-
-.header-link.active {
-  color: var(--accent-color);
-}
-
 .header-list .header-link {
   position: relative;
   display: block;
@@ -775,6 +768,10 @@ hr {
   color: var(--title-main-color);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link.active {
+  color: var(--accent-color);
 }
 
 .header-link.active::after {
@@ -1185,6 +1182,29 @@ hr {
   }
 }
 
+.card-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-link:hover, .card-link:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .img-tech {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -1218,7 +1238,7 @@ hr {
 }
 
 .btn-section {
-  padding: 95px 0;
+  padding: 94px 0;
 }
 
 .btn-box {
@@ -1235,10 +1255,22 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
 }
-
-.btn-ptl:not(:first-child) {
-  padding-left: 8px;
+@media screen and (min-width: 768px) {
+  .list-btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-btn {
+    margin-bottom: 50px;
+  }
 }
 
 .about {
@@ -1285,11 +1317,12 @@ hr {
 
 /* Галерея портфоліо */
 .box-title {
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+  padding: 20px 24px;
   border: 1px solid #EEEEEE;
+  border-top: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .portfolio-title {
