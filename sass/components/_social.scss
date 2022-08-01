@@ -1,24 +1,33 @@
 .footer-section {
-    display: flex;
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+        }
 }
 
 .footer-social {
-    display: flex;
-    flex-direction: column;
-    margin-left: 70px;
-    color: var(--main-txt-dark)
+    text-align: center;
+    
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+            margin-left: 70px;
+        }
+    
 }
 
 .join {
+    display: block;
     font-family: var(--secondary-font), "sans-serif";
     font-size: 14px;
     margin-bottom: 20px;
     color: #FFFFFF;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .footer-list-link {
     display: flex;
+    justify-content: center;
 
 }
 
