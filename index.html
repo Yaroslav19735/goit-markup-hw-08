@@ -241,31 +241,67 @@
           <h2 class="job__title">Чем мы занимаемся</h2>
           <ul class="job__list">
             <li class="list job__img-list">
-              <img
-                src="./images/dekstop.jpg"
-                alt="Мы програмиреум на декстоп"
-                width="370"
-              />
+              <div class="job__wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/chum/dekstop.jpg      1x,
+                      ./images/chum/dodatki2xdes.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/dekstop.jpg"
+                    alt="Мы програмиреум на декстоп"
+                    width="370"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
               <div class="job__working-box">
                 <h3 class="job__overlay">Десктопные приложения</h3>
               </div>
             </li>
             <li class="list job__img-list">
-              <img
-                src="./images/telefon.jpg"
-                alt="Мы програмируем на телефон"
-                width="370"
-              />
+              <div class="job__wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/chum/telefon.jpg   1x,
+                      ./images/chum/mobd2xdes.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/telefon.jpg"
+                    alt="Мы програмиреум на телефон"
+                    width="370"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
               <div class="job__working-box">
                 <h3 class="job__overlay">Мобильные приложения</h3>
               </div>
             </li>
             <li class="list job__img-list">
-              <img
-                src="./images/planshet.jpg"
-                alt="Мы програмируем на планшет"
-                width="370"
-              />
+              <div class="job__wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/chum/planshet.jpg      1x,
+                      ./images/chum/dizainer2xdes.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/planshet.jpg"
+                    alt="Мы програмиреум на планшет"
+                    width="370"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
               <div class="job__working-box">
                 <h3 class="job__overlay">Дизайнерские решения</h3>
               </div>

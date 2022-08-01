@@ -17,28 +17,28 @@
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/heroi-mob-2x.jpg);
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/heroi-mob-2x.jpg);
         }
 
 
             @media screen and (min-width: 481px) {
-                    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/heroi-tablet-1x.jpg);
+                    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/heroi-tablet-1x.jpg);
                     @media (min-device-pixel-ratio: 2),
                         (-webkit-min-device-pixel-ratio: 2),
                         (min-resolution: 192dpi),
                         (min-resolution: 2dppx) {
-                            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/heroi-tablet-2x.jpg);
+                            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/heroi-tablet-2x.jpg);
                         }
                 }
         
                 @media screen and (min-width: 769px) {
-                    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/about.jpg);
+                    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/about.jpg);
                     
                         @media (min-device-pixel-ratio: 2),
                         (-webkit-min-device-pixel-ratio: 2),
                         (min-resolution: 192dpi),
                         (min-resolution: 2dppx) {
-                            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/heroi-dekstop-2x.jpg);
+                            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/heroi-dekstop-2x.jpg);
                         }
                 }
 

@@ -805,25 +805,6 @@ hr {
 }
 
 .mobile-menu {
-  visibility: hidden;
-  -webkit-transform: translateY(-101%);
-          transform: translateY(-101%);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: visibility, -webkit-transform;
-  transition-property: visibility, -webkit-transform;
-  transition-property: visibility, transform;
-  transition-property: visibility, transform, -webkit-transform;
-}
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-}
-
-.mobile-menu.is-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -837,16 +818,30 @@ hr {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 99;
   width: 100%;
   height: 100%;
-  background-color: var(--main-txt-dark);
+  background-color: white;
   padding: 48px 25px;
   overflow-y: scroll;
   visibility: visible;
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu.is-open {
+    display: none;
+  }
 }
 
 .mobile-nav {
@@ -1130,6 +1125,10 @@ hr {
   text-transform: uppercase;
   color: #FFFFFF;
   z-index: 2;
+}
+
+.job__wrapper {
+  position: relative;
 }
 
 /* Постійні клієнти */
@@ -1635,32 +1634,32 @@ hr {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .about {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../../images/heroi-mob-2x.jpg);
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/heroi-mob-2x.jpg);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../images/heroi-mob-2x.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/heroi-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 481px) {
   .about {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../../images/heroi-tablet-1x.jpg);
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/heroi-tablet-1x.jpg);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../images/heroi-tablet-1x.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/heroi-tablet-1x.jpg);
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .about {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../../images/heroi-tablet-2x.jpg);
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/heroi-tablet-2x.jpg);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../images/heroi-tablet-2x.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/heroi-tablet-2x.jpg);
   }
 }
 @media screen and (min-width: 769px) {
   .about {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../../images/about.jpg);
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/about.jpg);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../images/about.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/about.jpg);
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .about {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../../images/heroi-dekstop-2x.jpg);
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/heroi-dekstop-2x.jpg);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../images/heroi-dekstop-2x.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/heroi-dekstop-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
