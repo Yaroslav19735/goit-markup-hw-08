@@ -89,6 +89,14 @@
             <path
                 d="m10.661 4.465 13.578 3.33-5.774 4.987L4.885 9.45l5.776-4.985zm-.257-.856L3.2 9.828l15.522 3.807 7.202-6.219-15.52-3.807zM19.595 26.282l6.329-5.465-6.329-1.553v7.018z" />
         </symbol>
+        <symbol id="icon-mobile-close" viewBox="0 0 32 32">
+            <path
+                d="M31.439 3.166l-3.166-3.166-12.553 12.553-12.553-12.553-3.166 3.166 12.553 12.553-12.553 12.553 3.166 3.166 12.553-12.553 12.553 12.553 3.166-3.166-12.553-12.553 12.553-12.553z">
+            </path>
+        </symbol>
+        <symbol id="icon-burger-menu" viewBox="0 0 48 32">
+            <path d="M0 5.333v-5.333h48v5.333h-48zM0 18.667h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"></path>
+        </symbol>
         <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"
             xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -135,7 +143,7 @@
             </defs>
         </svg>
 </svg>
-<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+<!-- <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <symbol id="icon-close-mobile" viewBox="0 0 32 32">
             <path
@@ -149,4 +157,4 @@
             <path d="M6.4 11.733V9.6h19.2v2.133H6.4zm0 5.334h19.2v-2.133H6.4v2.133zm0 5.333h19.2v-2.133H6.4V22.4z" />
         </symbol>
     </defs>
-</svg>
+</svg> -->
